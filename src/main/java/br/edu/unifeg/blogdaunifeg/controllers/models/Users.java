@@ -1,5 +1,8 @@
 package br.edu.unifeg.blogdaunifeg.controllers.models;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Users {
 
 	private int ra;
