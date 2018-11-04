@@ -7,7 +7,7 @@
 <title>Sign-Up</title>
 </head>
 <body>
-	<form action="/users" method="post">
+	<form action="/blogdaunifeg/users" method="post">
 		<div>
 			<label>RA</label>
 			<input type="text" name="RA">
