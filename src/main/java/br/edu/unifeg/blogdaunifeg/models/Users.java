@@ -1,4 +1,4 @@
-package br.edu.unifeg.blogdaunifeg.controllers.models;
+package br.edu.unifeg.blogdaunifeg.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

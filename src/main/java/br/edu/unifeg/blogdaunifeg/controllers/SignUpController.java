@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.edu.unifeg.blogdaunifeg.controllers.models.Users;
+import br.edu.unifeg.blogdaunifeg.models.Users;
 import br.edu.unifeg.blogdaunifeg.daos.UsersDAO;
 
 @Controller
