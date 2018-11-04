@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Bem vindo</title>
 </head>
 <body>
-
+	<div>
+		<h1>Seja bem vindo, você é um novo membro!!!</h1>
+	</div>
 </body>
 </html>
