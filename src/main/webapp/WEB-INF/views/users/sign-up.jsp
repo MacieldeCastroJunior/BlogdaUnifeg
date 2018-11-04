@@ -10,11 +10,11 @@
 	<form action="/blogdaunifeg/users" method="post">
 		<div>
 			<label>RA</label>
-			<input type="text" name="RA">
+			<input type="text" name="ra">
 		</div>
 		<div>
 			<label>Senha</label>
-			<input type="text" name="password">
+			<input type="text" name="senha">
 		</div>	
 		<button type="submit">Cadastrar</button>
 	</form>
