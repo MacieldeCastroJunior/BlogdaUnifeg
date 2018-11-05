@@ -10,18 +10,28 @@ public class Users {
 
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	private int ra;
+	private String nome;
+	private String sobrenome;
+	private String nomeusuario;
 	private String senha;
 	
-	@Override
-	public String toString() {
-		return "Users [ra=" + ra + ", senha=" + senha + "]";
+	public String getNome() {
+		return nome;
 	}
-	public int getRa() {
-		return ra;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public void setRa(int ra) {
-		this.ra = ra;
+	public String getSobrenome() {
+		return sobrenome;
+	}
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+	public String getNomeusuario() {
+		return nomeusuario;
+	}
+	public void setNomeusuario(String nomeusuario) {
+		this.nomeusuario = nomeusuario;
 	}
 	public String getSenha() {
 		return senha;
@@ -29,9 +39,5 @@ public class Users {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
-	
-	
-	
-	
+
 }

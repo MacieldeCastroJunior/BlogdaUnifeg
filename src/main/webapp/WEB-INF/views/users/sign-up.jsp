@@ -9,13 +9,21 @@
 <body>
 	<form action="/blogdaunifeg/users" method="post">
 		<div>
-			<label>RA</label>
-			<input type="text" name="ra">
+			<label>Nome</label>
+			<input type="text" name="nome">
+		</div>
+		<div>
+			<label>Sobrenome</label>
+			<input type="text" name="sobrenome">
+		</div>
+		<div>
+			<label>Nome de usuario</label>
+			<input type="text" name="nomeusuario">
 		</div>
 		<div>
 			<label>Senha</label>
-			<input type="text" name="senha">
-		</div>	
+			<input type="password" name="senha">
+		</div>
 		<button type="submit">Cadastrar</button>
 	</form>
 </body>

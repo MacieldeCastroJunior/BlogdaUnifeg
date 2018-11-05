@@ -1,9 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <!DOCTYPE html>
 <html>
 <head>
+<c:url value="/" var="contextPath" />
 <meta charset="UTF-8">
+<link href="${contextPath}resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
 <title>BLOG DA UNIFEG</title>
 </head>
        <body>
