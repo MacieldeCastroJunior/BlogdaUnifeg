@@ -33,11 +33,11 @@
 				</div>
 				<div class="form-group col-md-4">
 					<label for="inputSenha">Senha</label> <input type="password"
-						class="form-control" name="senha" placeholder="Senha">
+						class="form-control" name="senha" id="password" placeholder="Senha">
 				</div>
 				<div class="form-group col-md-4">
 					<label for="inputSenha2">Confirme Senha</label> <input
-						type="password" class="form-control" name="senha2"
+						type="password" class="form-control" name="senha2" id="confirm_password"
 						placeholder="Senha">
 				</div>
 			</div>
@@ -53,5 +53,6 @@
 	src="<c:url value="/resources/js/jquery.js" />"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/js/password.js" />"></script>
 </html>

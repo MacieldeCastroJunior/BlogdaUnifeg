@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bem vindo</title>
+<title>Bem vindo!</title>
 </head>
 <body>
-	<div>
+	<div class="container">
 		<h1>Seja bem vindo, você é um novo membro!!!</h1>
 	</div>
 </body>
