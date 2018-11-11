@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,19 +57,24 @@
                                 <a href="#">O que Rolou</a>
                             </li>
                               <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Área Restrita
                                     <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="users/sign-in">Logar</a></li>
+                                    <li><a href="login">Logar</a></li>
                                     <li><a href="users/sign-up">Inscreva-se</a></li>
+                                  <security:authorize access="isAuthenticated()">
+                                  	<li><a href="post/novapostagem">Publicar Conteudos</a></li>
+                                  </security:authorize>
                                 </ul>
                             </li>
                          </ul>
                     </div>
                 </div>
             </nav>
+            <h1></h1>
             <div class="container banner">
-                <div class="imageBannner"></div>
+            	<h1></h1>
+                <div class="container imageBannner"></div>
             </div>
         </header>
 

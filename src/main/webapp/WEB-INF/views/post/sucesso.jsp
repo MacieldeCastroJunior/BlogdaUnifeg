@@ -11,4 +11,5 @@
 		<h1>Nova postagem realizada!</h1>
 	</div>
 </body>
+<script type="text/javascript" src="<c:url value="/resources/js/redirect.js" />"></script>
 </html>

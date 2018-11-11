@@ -1,5 +1,7 @@
 package br.edu.unifeg.blogdaunifeg.models;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,7 +15,13 @@ public class Post {
 	private String titulo;
 	private String conteudo;
 	private int area;
-	private String data;
+	private Date data = new Date();
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getTitulo() {
 		return titulo;
 	}
@@ -32,13 +40,11 @@ public class Post {
 	public void setArea(int area) {
 		this.area = area;
 	}
-	public String getData() {
+	public Date getData() {
 		return data;
 	}
-	public void setData(String data) {
+	public void setData(Date data) {
 		this.data = data;
 	}
 	
-	
-
 }
