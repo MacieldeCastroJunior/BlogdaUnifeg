@@ -18,13 +18,13 @@ public class SignUpController {
 		return "users/sign-up";
 	}
 	
-	@RequestMapping("/users")
-	public String grava(Users users) {
-		System.out.println(users);
-		usersDao.gravar(users);
-		return "users/sucesso";
-		
-	}
+//	@RequestMapping("/users")
+//	public String grava(Users users) {
+//		System.out.println(users);
+//		usersDao.gravar(users);
+//		return "users/sucesso";
+//		
+//	}
 	
 	
 }

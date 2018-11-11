@@ -1,12 +1,20 @@
 package br.edu.unifeg.blogdaunifeg.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import br.edu.unifeg.blogdaunifeg.daos.UsersDAO;
 
 
-@EnableWebMvcSecurity
+@EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+	@Autowired
+	private UsersDAO usersDao;
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -16,4 +24,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			.anyRequest().authenticated()
 			.and().formLogin();
 	}
+	
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(usersDao)
+			.passwordEncoder(new BCryptPasswordEncoder());
+		
+	}
+	
 }
