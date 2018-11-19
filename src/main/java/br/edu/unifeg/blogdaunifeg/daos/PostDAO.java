@@ -1,4 +1,6 @@
 package br.edu.unifeg.blogdaunifeg.daos;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
@@ -16,4 +18,11 @@ public class PostDAO {
 	public void gravar(Post post) {
 		manager.persist(post);		
 	}
+
+	public List<Post> listar() {
+		return manager.createQuery("select * from Post where area = 4", Post.class)
+				.getResultList();
+	}
+	
+	
 }

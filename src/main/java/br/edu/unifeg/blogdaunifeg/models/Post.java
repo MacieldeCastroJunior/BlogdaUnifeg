@@ -13,9 +13,10 @@ public class Post {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String titulo;
+	private String resumo;
 	private String conteudo;
 	private int area;
-	private Date data = new Date();
+		private Date data = new Date();
 	public int getId() {
 		return id;
 	}
@@ -45,6 +46,12 @@ public class Post {
 	}
 	public void setData(Date data) {
 		this.data = data;
+	}
+	public String getResumo() {
+		return resumo;
+	}
+	public void setResumo(String resumo) {
+		this.resumo = resumo;
 	}
 	
 }

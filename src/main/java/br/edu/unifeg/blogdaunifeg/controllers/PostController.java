@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 import br.edu.unifeg.blogdaunifeg.models.Post;
 import br.edu.unifeg.blogdaunifeg.daos.PostDAO;
 
@@ -27,5 +28,13 @@ public class PostController {
 		
 	}
 	
+	@RequestMapping("/post/cienciadacomputacao")
+	public String listar() {
+//		List<Post> post = postDao.listar();
+//		ModelAndView modelandview = new ModelAndView("/post/cienciadacomputacao");
+//		modelandview.addObject("post", post);
+//		return modelandview;
+		return "post/cienciadacomputacao";
+	}
 	
 }
