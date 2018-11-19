@@ -33,20 +33,30 @@
 				</div>
 				<div class="form-group col-md-4">
 					<label for="inputSenha">Senha</label> <input type="password"
-						class="form-control" name="senha" id="password" placeholder="Senha">
+						class="form-control" name="senha" id="password"
+						placeholder="Senha">
 				</div>
 				<div class="form-group col-md-4">
 					<label for="inputSenha2">Confirme Senha</label> <input
-						type="password" class="form-control" name="senha2" id="confirm_password"
-						placeholder="Senha">
+						type="password" class="form-control" name="senha2"
+						id="confirm_password" placeholder="Senha">
 				</div>
 			</div>
 			<div class="form-row">
 				<div class="form-group col-md-6">
-					<button type="submit" class="btn btn-primary">Inscrever</button>
+					<div class="g-recaptcha"
+						data-sitekey="6Ld493kUAAAAAFg18gIZYgNvSUBKG6PDRJdbEjQ-"></div>
 				</div>
 			</div>
+			<script src='https://www.google.com/recaptcha/api.js'></script>
 		</form>
+	</div>
+	<div class="container">
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<button type="submit" class="btn btn-primary">Inscrever</button>
+			</div>
+		</div>
 	</div>
 </body>
 <script type="text/javascript"
