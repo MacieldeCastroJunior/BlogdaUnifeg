@@ -10,12 +10,13 @@
 <head>
 <c:url value="/" var="contextPath" />
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="<c:url value="/resources/css/bootstrap.min.css" />"
+	rel="stylesheet">
 <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 <title>BLOG DA UNIFEG!</title>
 </head>
 <header>
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed btn-menu"
@@ -27,7 +28,8 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="collapse-navbar">
-				<ul class="nav navbar-nav">
+				<ul class="navbar-right nav navbar-nav">
+					<li></li>
 					<li><a href="#">Inicio</a></li>
 					<li class="dropdown"><a class="dropdown-toggle"
 						data-toggle="dropdown" href="#">Dica dos Veteranos <span
@@ -65,15 +67,17 @@
 				</ul>
 			</div>
 		</div>
+		<script type="text/javascript">
+				var bannersnack_embed = {"hash":"bcp3yj5jv","width":1228,"height":150,"t":1520883045,"userId":35006826,"responsive":true,"type":"html5"};
+				</script>
+		<script type="text/javascript"
+			src="//cdn.bannersnack.com/iframe/embed.js"></script>
 	</nav>
-	<h1></h1>
-	<div class="container banner">
-		<h1></h1>
-		<div class="container imageBannner"></div>
-	</div>
 </header>
+<h2>  </h2>
+<h2>  </h2>
 <body>
-	<div class="row bloco">
+	<div class="container row bloco">
 		<h2>Ultimas Dicas</h2>
 		<div class="col-md-7 col-sm-6">
 			<img class="img-responsive col-sm-6" src="img/estudante.jpg"
@@ -176,7 +180,8 @@
 		</div>
 	</section>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/js/jquery.js" />"></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 </html>
